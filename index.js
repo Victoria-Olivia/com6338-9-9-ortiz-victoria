@@ -18,7 +18,7 @@ try {
     throw new Error('Location not found');
   }
   const data = await response.json();
-  console.log(data);
+  
   const {
     name,
     sys: { country },
@@ -64,7 +64,7 @@ try {
     const lastUpdated = document.createElement("p");
         lastUpdated.textContent = `Last updated: ${timeString}`;
         weatherResult.appendChild(lastUpdated);
-        
+
   } catch (error) {
         const errorMessage = document.createElement("h2");
         errorMessage.textContent = "Location not found";
